@@ -8,13 +8,11 @@ class Weather {
 
   // Fetch weather from API
   async getWeather() {
-    const response = await fetch(`https://api.openweathermap.org/data/2.5/weather?units=imperial&q=${this.city}&APPID=${this.apiKey}`, {method: 'GET', redirect: 'follow', mode: 'cors'});
+    const response = await fetch(`https://api.openweathermap.org/data/2.5/weather?units=imperial&zip=${this.zip}&q=${this.city}&APPID=${this.apiKey}`, {method: 'GET', redirect: 'follow', mode: 'cors'});
 
     const responseData = await response.json();
 
-    console.log(responseData);
-
-    // return responseData.weather;
+    return responseData;
   }
 
   // Change weather location
