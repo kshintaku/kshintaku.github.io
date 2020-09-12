@@ -79,7 +79,34 @@ ul {
 
   .main-nav ul li {
     padding: 0 10px;
+    float: right;
   }
+
+  .main-nav .icon {
+    display: none;
+  }
+
+@media screen and (max-width: 600px) {
+  .main-nav ul {
+    float: none;
+    display: block;
+    overflow: auto;
+  }
+}
+
+/* @media screen and (max-width: 600px) {
+  .main-nav.main-tabs.responsive {position: relative;}
+  .main-nav.responsive .icon {
+    padding: 0 20px;
+    vertical-align: middle;
+  }
+  .main-nav.main-tabs.responsive ul li {
+    position: relative;
+    float: right;
+    display: block;
+    text-align: left;
+  }
+} */
 
 .active:hover {
   background: transparent;
