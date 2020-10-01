@@ -169,6 +169,23 @@ li {
   align-items: center;
 }
 
+.label {
+  text-transform: uppercase;
+  font-size: medium;
+  padding: 0;
+  margin: 0;
+}
+
+article ul li {
+  margin: 0;
+}
+article ul li a {
+  color: #1c2bf7;
+  margin: 0;
+  padding: 0;
+  margin-right: 14px;
+}
+
 .row {
   display: flex;
   flex-wrap: wrap;
