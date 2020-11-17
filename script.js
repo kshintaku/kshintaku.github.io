@@ -11,3 +11,9 @@ function setModeEventListener() {
     event.target.checked ? list.add("dark-mode") : list.remove("dark-mode");
   });
 }
+
+if (window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches) {
+  document.getElementById("toggler").checked = true;
+  let list = document.body.classList;
+  list.add("dark-mode");
+}
